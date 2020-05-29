@@ -134,12 +134,16 @@ func getSpecComponents(workspace *devworkspace.DevWorkspace, scheme *runtime.Sch
 
 	if len(dockerComponents) == 0 {
 		if cmd_terminal.ContainsCmdTerminalComponent(pluginComponents) {
-			defaultDockerimage, err := config.ControllerCfg.GetDefaultTerminalDockerimage()
+			defaultContainer, err := config.ControllerCfg.GetDefaultTerminalDockerimage()
 			if err != nil {
 				log.Error(err, fmt.Sprintf("Failed to provision default dockerimage component for '%s'. Cause: %s", cmd_terminal.CommandLineTerminalPublisherName, err.Error()))
 				return nil, errors.New("configure dockerimage component or ask administrator to fix default one for " + cmd_terminal.CommandLineTerminalPublisherName)
 			}
-			dockerComponents = []v1alpha1.ComponentSpec{*defaultDockerimage}
+			dockerComponents = []devworkspace.Component{
+				{
+					Container: defaultContainer,
+				},
+			}
 		}
 	}
 

@@ -51,7 +51,7 @@ func getExposedEndpoints(
 }
 
 func resolveURLForEndpoint(
-	endpoint devworkspace.Endpoint.Endpoint,
+	endpoint devworkspace.Endpoint,
 	routingObj RoutingObjects) (string, error) {
 	for _, route := range routingObj.Routes {
 		if route.Annotations[config.WorkspaceEndpointNameAnnotation] == endpoint.Name {
