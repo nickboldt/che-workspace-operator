@@ -217,6 +217,10 @@ github.com/devfile/kubernetes-api v0.0.0-20200602182058-996d37411545 h1:shsdHVcu
 github.com/devfile/kubernetes-api v0.0.0-20200602182058-996d37411545/go.mod h1:yqOXWQYZvwWrGU+M2bbMPkYobKw67ejseWTNdaKEPGA=
 github.com/devfile/kubernetes-api v0.0.0-20200603070209-111f6d2079ed h1:SuaT8Eu09scEEEYdI9ZbNxqG/t4h6OjI0oCqK7XzOuQ=
 github.com/devfile/kubernetes-api v0.0.0-20200603070209-111f6d2079ed/go.mod h1:yqOXWQYZvwWrGU+M2bbMPkYobKw67ejseWTNdaKEPGA=
+github.com/devfile/kubernetes-api v0.0.0-20200603092340-6cd3e784cbc7 h1:5zJu07SWzHfpV+zOIckrjMoDWjOr5hEP9xdLkfX9zZ8=
+github.com/devfile/kubernetes-api v0.0.0-20200603092340-6cd3e784cbc7/go.mod h1:yqOXWQYZvwWrGU+M2bbMPkYobKw67ejseWTNdaKEPGA=
+github.com/devfile/kubernetes-api v0.0.0-20200603111415-8e1485401159 h1:YWt25627Zf/Eo+YFsk4G6ckEx9650S27AHqsfflUlqs=
+github.com/devfile/kubernetes-api v0.0.0-20200603111415-8e1485401159/go.mod h1:yqOXWQYZvwWrGU+M2bbMPkYobKw67ejseWTNdaKEPGA=
 github.com/dgrijalva/jwt-go v0.0.0-20170104182250-a601269ab70c/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
