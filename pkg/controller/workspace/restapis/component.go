@@ -14,6 +14,7 @@ package restapis
 
 import (
 	"github.com/che-incubator/che-workspace-operator/pkg/apis/workspace/v1alpha1"
+	devworkspace "github.com/devfile/kubernetes-api/pkg/apis/workspaces/v1alpha1"
 	"github.com/che-incubator/che-workspace-operator/pkg/common"
 	"github.com/che-incubator/che-workspace-operator/pkg/config"
 	corev1 "k8s.io/api/core/v1"
@@ -92,14 +93,14 @@ func GetCheRestApisComponent(workspaceName, workspaceId, namespace string) v1alp
 					Ports: []int{cheRestApisPort},
 				},
 			},
-			Endpoints: []v1alpha1.Endpoint{
+			Endpoints: []devworkspace.Endpoint{
 				{
-					Attributes: map[v1alpha1.EndpointAttribute]string{
-						v1alpha1.PUBLIC_ENDPOINT_ATTRIBUTE:   "false",
-						v1alpha1.PROTOCOL_ENDPOINT_ATTRIBUTE: "tcp",
+					Attributes: map[string]string{
+						string(v1alpha1.PUBLIC_ENDPOINT_ATTRIBUTE):   "false",
+						string(v1alpha1.PROTOCOL_ENDPOINT_ATTRIBUTE): "tcp",
 					},
 					Name: cheRestAPIsName,
-					Port: int64(cheRestApisPort),
+					TargetPort: cheRestApisPort,
 				},
 			},
 		},
