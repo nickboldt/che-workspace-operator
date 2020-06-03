@@ -6,7 +6,7 @@ go 1.12
 require github.com/eclipse/che-plugin-broker v3.1.1-0.20200207223144-b20597f15e4c+incompatible
 
 // use-devfile-2.0-in-workspace-controller
-require github.com/devfile/kubernetes-api v0.0.0-20200528131426-1c302093199b
+require github.com/devfile/kubernetes-api v0.0.0-20200529164218-1a197ef047ed
 
 // replace github.com/devfile/kubernetes-api => /home/dfestal/go/src/github.com/devfile/kubernetes-api
 
